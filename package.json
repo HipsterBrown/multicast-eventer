@@ -1,0 +1,35 @@
+{
+  "name": "multicast-eventer",
+  "version": "1.0.0",
+  "description": "An EventEmitter for publishing & subscribing to multicast events across a network",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": ["dist"],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build",
+    "test": "tsc --build tsconfig.json",
+    "watch": "rollup -cw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HipsterBrown/multicast-eventer.git"
+  },
+  "keywords": ["multicast", "events", "dgram"],
+  "author": "HipsterBrown <headhipster@hipsterbrown.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HipsterBrown/multicast-eventer/issues"
+  },
+  "homepage": "https://github.com/HipsterBrown/multicast-eventer#readme",
+  "dependencies": {
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.4",
+    "rollup": "^1.15.6",
+    "rollup-plugin-typescript2": "^0.21.1",
+    "typescript": "^3.5.2"
+  }
+}
