@@ -1,10 +1,12 @@
 {
   "name": "multicast-eventer",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "An EventEmitter for publishing & subscribing to multicast events across a network",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
@@ -17,7 +19,11 @@
     "type": "git",
     "url": "https://github.com/HipsterBrown/multicast-eventer.git"
   },
-  "keywords": ["multicast", "events", "dgram"],
+  "keywords": [
+    "multicast",
+    "events",
+    "dgram"
+  ],
   "author": "HipsterBrown <headhipster@hipsterbrown.com>",
   "license": "MIT",
   "bugs": {
